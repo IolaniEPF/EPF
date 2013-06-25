@@ -514,6 +514,7 @@
 				36A1505417791BAB002CDFC5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		36A1505517791BAB002CDFC5 /* Build configuration list for PBXNativeTarget "EPFTests" */ = {
 			isa = XCConfigurationList;
@@ -522,6 +523,7 @@
 				36A1505717791BAB002CDFC5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

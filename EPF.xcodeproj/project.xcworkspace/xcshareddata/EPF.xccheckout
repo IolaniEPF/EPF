@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>811FEC47-CF3E-46AD-8F6D-8C71894E5AF2</string>
+	<key>IDESourceControlProjectName</key>
+	<string>EPF</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>3C374214-64A9-4671-A25B-EF89A4D003AD</key>
+		<string>https://github.com/koluke/EPF.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>EPF.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>3C374214-64A9-4671-A25B-EF89A4D003AD</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/koluke/EPF.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>3C374214-64A9-4671-A25B-EF89A4D003AD</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>3C374214-64A9-4671-A25B-EF89A4D003AD</string>
+			<key>IDESourceControlWCCName</key>
+			<string>EPF</string>
+		</dict>
+	</array>
+</dict>
+</plist>
