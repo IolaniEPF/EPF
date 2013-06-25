@@ -28,6 +28,9 @@
 		36A1504417791BAB002CDFC5 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36A1501717791BAB002CDFC5 /* CoreData.framework */; };
 		36A1504C17791BAB002CDFC5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 36A1504A17791BAB002CDFC5 /* InfoPlist.strings */; };
 		36A1504F17791BAB002CDFC5 /* EPFTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 36A1504E17791BAB002CDFC5 /* EPFTests.m */; };
+		36A1505D17791EFC002CDFC5 /* libTestFlight.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 36A1505917791EFC002CDFC5 /* libTestFlight.a */; };
+		36A1505E17791EFC002CDFC5 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 36A1505A17791EFC002CDFC5 /* README.md */; };
+		36A1505F17791EFC002CDFC5 /* release_notes.md in Resources */ = {isa = PBXBuildFile; fileRef = 36A1505B17791EFC002CDFC5 /* release_notes.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +71,10 @@
 		36A1504B17791BAB002CDFC5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		36A1504D17791BAB002CDFC5 /* EPFTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EPFTests.h; sourceTree = "<group>"; };
 		36A1504E17791BAB002CDFC5 /* EPFTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EPFTests.m; sourceTree = "<group>"; };
+		36A1505917791EFC002CDFC5 /* libTestFlight.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libTestFlight.a; sourceTree = "<group>"; };
+		36A1505A17791EFC002CDFC5 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		36A1505B17791EFC002CDFC5 /* release_notes.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = release_notes.md; sourceTree = "<group>"; };
+		36A1505C17791EFC002CDFC5 /* TestFlight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestFlight.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +86,7 @@
 				36A1501417791BAB002CDFC5 /* Foundation.framework in Frameworks */,
 				36A1501617791BAB002CDFC5 /* CoreGraphics.framework in Frameworks */,
 				36A1501817791BAB002CDFC5 /* CoreData.framework in Frameworks */,
+				36A1505D17791EFC002CDFC5 /* libTestFlight.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,6 +107,7 @@
 		36A1500517791BAB002CDFC5 = {
 			isa = PBXGroup;
 			children = (
+				36A1505817791EFC002CDFC5 /* TestFlightSDK1.2.6 */,
 				36A1501917791BAB002CDFC5 /* EPF */,
 				36A1504717791BAB002CDFC5 /* EPFTests */,
 				36A1501017791BAB002CDFC5 /* Frameworks */,
@@ -175,6 +184,17 @@
 				36A1504A17791BAB002CDFC5 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		36A1505817791EFC002CDFC5 /* TestFlightSDK1.2.6 */ = {
+			isa = PBXGroup;
+			children = (
+				36A1505917791EFC002CDFC5 /* libTestFlight.a */,
+				36A1505A17791EFC002CDFC5 /* README.md */,
+				36A1505B17791EFC002CDFC5 /* release_notes.md */,
+				36A1505C17791EFC002CDFC5 /* TestFlight.h */,
+			);
+			path = TestFlightSDK1.2.6;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -255,6 +275,8 @@
 				36A1502A17791BAB002CDFC5 /* Default-568h@2x.png in Resources */,
 				36A1502D17791BAB002CDFC5 /* MainStoryboard_iPhone.storyboard in Resources */,
 				36A1503017791BAB002CDFC5 /* MainStoryboard_iPad.storyboard in Resources */,
+				36A1505E17791EFC002CDFC5 /* README.md in Resources */,
+				36A1505F17791EFC002CDFC5 /* release_notes.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -415,6 +437,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "EPF/EPF-Prefix.pch";
 				INFOPLIST_FILE = "EPF/EPF-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/TestFlightSDK1.2.6\"",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -426,6 +452,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "EPF/EPF-Prefix.pch";
 				INFOPLIST_FILE = "EPF/EPF-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/TestFlightSDK1.2.6\"",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
