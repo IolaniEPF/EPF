@@ -3,19 +3,31 @@
 <plist version="1.0">
 <dict>
 	<key>IDESourceControlProjectIdentifier</key>
+<<<<<<< HEAD
 	<string>56D34AEE-AFBC-41B1-B679-29D825F38724</string>
+=======
+	<string>811FEC47-CF3E-46AD-8F6D-8C71894E5AF2</string>
+>>>>>>> 47a328fa6648c7b51e186f2f22952bbd66f15e9a
 	<key>IDESourceControlProjectName</key>
 	<string>EPF</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
+<<<<<<< HEAD
 		<key>EE57B5CC-DD1F-410B-8547-2EF50F26D944</key>
+=======
+		<key>3C374214-64A9-4671-A25B-EF89A4D003AD</key>
+>>>>>>> 47a328fa6648c7b51e186f2f22952bbd66f15e9a
 		<string>https://github.com/koluke/EPF.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>EPF.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
+<<<<<<< HEAD
 		<key>EE57B5CC-DD1F-410B-8547-2EF50F26D944</key>
+=======
+		<key>3C374214-64A9-4671-A25B-EF89A4D003AD</key>
+>>>>>>> 47a328fa6648c7b51e186f2f22952bbd66f15e9a
 		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
@@ -23,14 +35,22 @@
 	<key>IDESourceControlProjectVersion</key>
 	<integer>110</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
+<<<<<<< HEAD
 	<string>EE57B5CC-DD1F-410B-8547-2EF50F26D944</string>
+=======
+	<string>3C374214-64A9-4671-A25B-EF89A4D003AD</string>
+>>>>>>> 47a328fa6648c7b51e186f2f22952bbd66f15e9a
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
+<<<<<<< HEAD
 			<string>EE57B5CC-DD1F-410B-8547-2EF50F26D944</string>
+=======
+			<string>3C374214-64A9-4671-A25B-EF89A4D003AD</string>
+>>>>>>> 47a328fa6648c7b51e186f2f22952bbd66f15e9a
 			<key>IDESourceControlWCCName</key>
 			<string>EPF</string>
 		</dict>
