@@ -2,7 +2,7 @@
 //  EPFDetailViewController.h
 //  EPF
 //
-//  Created by appdev on 6/24/13.
+//  Created by Blake Tsuzaki on 6/24/13.
 //  Copyright (c) 2013 'Iolani School. All rights reserved.
 //
 
