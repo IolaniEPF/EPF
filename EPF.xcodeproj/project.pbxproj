@@ -42,6 +42,9 @@
 		36A1504417791BAB002CDFC5 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36A1501717791BAB002CDFC5 /* CoreData.framework */; };
 		36A1504C17791BAB002CDFC5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 36A1504A17791BAB002CDFC5 /* InfoPlist.strings */; };
 		36A1504F17791BAB002CDFC5 /* EPFTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 36A1504E17791BAB002CDFC5 /* EPFTests.m */; };
+		36F2F0B3177BD46A005389E1 /* libTestFlight.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 36F2F0AF177BD46A005389E1 /* libTestFlight.a */; };
+		36F2F0B4177BD46A005389E1 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 36F2F0B0177BD46A005389E1 /* README.md */; };
+		36F2F0B5177BD46A005389E1 /* release_notes.md in Resources */ = {isa = PBXBuildFile; fileRef = 36F2F0B1177BD46A005389E1 /* release_notes.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -96,6 +99,10 @@
 		36A1504B17791BAB002CDFC5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		36A1504D17791BAB002CDFC5 /* EPFTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EPFTests.h; sourceTree = "<group>"; };
 		36A1504E17791BAB002CDFC5 /* EPFTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EPFTests.m; sourceTree = "<group>"; };
+		36F2F0AF177BD46A005389E1 /* libTestFlight.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libTestFlight.a; sourceTree = "<group>"; };
+		36F2F0B0177BD46A005389E1 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		36F2F0B1177BD46A005389E1 /* release_notes.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = release_notes.md; sourceTree = "<group>"; };
+		36F2F0B2177BD46A005389E1 /* TestFlight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestFlight.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +110,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				36F2F0B3177BD46A005389E1 /* libTestFlight.a in Frameworks */,
 				3656BB07177BC1B10058A3D8 /* SystemConfiguration.framework in Frameworks */,
 				3656BB05177BC1A50058A3D8 /* StoreKit.framework in Frameworks */,
 				3656BB03177BC18A0058A3D8 /* Security.framework in Frameworks */,
@@ -203,6 +211,7 @@
 		36A1501A17791BAB002CDFC5 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				36F2F0AE177BD46A005389E1 /* TestFlightSDK1.2.6 */,
 				36A1501B17791BAB002CDFC5 /* EPF-Info.plist */,
 				36A1501C17791BAB002CDFC5 /* InfoPlist.strings */,
 				36A1501F17791BAB002CDFC5 /* main.m */,
@@ -231,6 +240,18 @@
 				36A1504A17791BAB002CDFC5 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		36F2F0AE177BD46A005389E1 /* TestFlightSDK1.2.6 */ = {
+			isa = PBXGroup;
+			children = (
+				36F2F0AF177BD46A005389E1 /* libTestFlight.a */,
+				36F2F0B0177BD46A005389E1 /* README.md */,
+				36F2F0B1177BD46A005389E1 /* release_notes.md */,
+				36F2F0B2177BD46A005389E1 /* TestFlight.h */,
+			);
+			name = TestFlightSDK1.2.6;
+			path = ../TestFlightSDK1.2.6;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -305,9 +326,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				36F2F0B5177BD46A005389E1 /* release_notes.md in Resources */,
 				36A1501E17791BAB002CDFC5 /* InfoPlist.strings in Resources */,
 				36A1502617791BAB002CDFC5 /* Default.png in Resources */,
 				36A1502817791BAB002CDFC5 /* Default@2x.png in Resources */,
+				36F2F0B4177BD46A005389E1 /* README.md in Resources */,
 				36A1502A17791BAB002CDFC5 /* Default-568h@2x.png in Resources */,
 				36A1502D17791BAB002CDFC5 /* MainStoryboard_iPhone.storyboard in Resources */,
 				36A1503017791BAB002CDFC5 /* MainStoryboard_iPad.storyboard in Resources */,
@@ -479,8 +502,9 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"\\\"$(SRCROOT)/TestFlightSDK1.2.6\\\"",
+					"\\\\\\\"$(SRCROOT)/TestFlightSDK1.2.6\\\\\\\"",
 					"$(SRCROOT)",
+					"$(SRCROOT)/TestFlightSDK1.2.6",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "2799510E-E5CA-44DA-923D-4E05F6D235D7";
@@ -502,8 +526,9 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"\\\"$(SRCROOT)/TestFlightSDK1.2.6\\\"",
+					"\\\\\\\"$(SRCROOT)/TestFlightSDK1.2.6\\\\\\\"",
 					"$(SRCROOT)",
+					"$(SRCROOT)/TestFlightSDK1.2.6",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "2799510E-E5CA-44DA-923D-4E05F6D235D7";
