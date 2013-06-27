@@ -7,7 +7,7 @@
 //
 
 #import "EPFMasterViewController.h"
-
+#import <Parse/Parse.h>
 #import "EPFDetailViewController.h"
 
 @interface EPFMasterViewController ()
@@ -34,6 +34,8 @@
     UIBarButtonItem *addButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(insertNewObject:)];
     self.navigationItem.rightBarButtonItem = addButton;
     self.detailViewController = (EPFDetailViewController *)[[self.splitViewController.viewControllers lastObject] topViewController];
+    
+    
 }
 
 - (void)didReceiveMemoryWarning
