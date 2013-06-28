@@ -12,6 +12,8 @@
 
 @interface EPFMasterViewController ()
 - (void)configureCell:(UITableViewCell *)cell atIndexPath:(NSIndexPath *)indexPath;
+@property BOOL isAuthorized;
+
 @end
 
 @implementation EPFMasterViewController
@@ -34,8 +36,6 @@
     UIBarButtonItem *addButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(insertNewObject:)];
     self.navigationItem.rightBarButtonItem = addButton;
     self.detailViewController = (EPFDetailViewController *)[[self.splitViewController.viewControllers lastObject] topViewController];
-    
-    
 }
 
 - (void)didReceiveMemoryWarning
@@ -65,6 +65,11 @@
 }
 
 #pragma mark - Table View
+/*
+- (IBAction)authButtonClicked:(id)sender { //Signin to Google
+    
+}
+*/
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
