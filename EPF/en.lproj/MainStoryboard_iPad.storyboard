@@ -151,6 +151,9 @@
         </class>
         <class className="EPFMasterViewController" superclassName="UITableViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/EPFMasterViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="authButtonClicked:"/>
+            </relationships>
         </class>
         <class className="NSLayoutConstraint" superclassName="NSObject">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
