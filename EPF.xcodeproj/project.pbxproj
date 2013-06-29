@@ -21,6 +21,8 @@
 		3656BB03177BC18A0058A3D8 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3656BB02177BC18A0058A3D8 /* Security.framework */; };
 		3656BB05177BC1A50058A3D8 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3656BB04177BC1A50058A3D8 /* StoreKit.framework */; };
 		3656BB07177BC1B10058A3D8 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3656BB06177BC1B10058A3D8 /* SystemConfiguration.framework */; };
+		36602206177E62CA008E3DEC /* PopoverViewController.xib in Sources */ = {isa = PBXBuildFile; fileRef = 361DD11D177E5A1E00D6B254 /* PopoverViewController.xib */; };
+		36602209177E65F0008E3DEC /* PopoverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 36602208177E65F0008E3DEC /* PopoverViewController.m */; };
 		36A1501217791BAB002CDFC5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36A1501117791BAB002CDFC5 /* UIKit.framework */; };
 		36A1501417791BAB002CDFC5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36A1501317791BAB002CDFC5 /* Foundation.framework */; };
 		36A1501617791BAB002CDFC5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36A1501517791BAB002CDFC5 /* CoreGraphics.framework */; };
@@ -42,9 +44,6 @@
 		36A1504417791BAB002CDFC5 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36A1501717791BAB002CDFC5 /* CoreData.framework */; };
 		36A1504C17791BAB002CDFC5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 36A1504A17791BAB002CDFC5 /* InfoPlist.strings */; };
 		36A1504F17791BAB002CDFC5 /* EPFTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 36A1504E17791BAB002CDFC5 /* EPFTests.m */; };
-		36F2F0B3177BD46A005389E1 /* libTestFlight.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 36F2F0AF177BD46A005389E1 /* libTestFlight.a */; };
-		36F2F0B4177BD46A005389E1 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 36F2F0B0177BD46A005389E1 /* README.md */; };
-		36F2F0B5177BD46A005389E1 /* release_notes.md in Resources */ = {isa = PBXBuildFile; fileRef = 36F2F0B1177BD46A005389E1 /* release_notes.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +57,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		361DD11D177E5A1E00D6B254 /* PopoverViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PopoverViewController.xib; sourceTree = "<group>"; };
 		3656BAEC177BC1120058A3D8 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		3656BAEE177BC1370058A3D8 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
 		3656BAF0177BC13F0058A3D8 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
@@ -72,6 +72,8 @@
 		3656BB02177BC18A0058A3D8 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		3656BB04177BC1A50058A3D8 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		3656BB06177BC1B10058A3D8 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		36602207177E65F0008E3DEC /* PopoverViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopoverViewController.h; sourceTree = "<group>"; };
+		36602208177E65F0008E3DEC /* PopoverViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopoverViewController.m; sourceTree = "<group>"; };
 		36A1500E17791BAB002CDFC5 /* EPF.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EPF.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		36A1501117791BAB002CDFC5 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		36A1501317791BAB002CDFC5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -99,10 +101,6 @@
 		36A1504B17791BAB002CDFC5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		36A1504D17791BAB002CDFC5 /* EPFTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EPFTests.h; sourceTree = "<group>"; };
 		36A1504E17791BAB002CDFC5 /* EPFTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EPFTests.m; sourceTree = "<group>"; };
-		36F2F0AF177BD46A005389E1 /* libTestFlight.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libTestFlight.a; sourceTree = "<group>"; };
-		36F2F0B0177BD46A005389E1 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
-		36F2F0B1177BD46A005389E1 /* release_notes.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = release_notes.md; sourceTree = "<group>"; };
-		36F2F0B2177BD46A005389E1 /* TestFlight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestFlight.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,7 +108,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				36F2F0B3177BD46A005389E1 /* libTestFlight.a in Frameworks */,
+				36A1501217791BAB002CDFC5 /* UIKit.framework in Frameworks */,
 				3656BB07177BC1B10058A3D8 /* SystemConfiguration.framework in Frameworks */,
 				3656BB05177BC1A50058A3D8 /* StoreKit.framework in Frameworks */,
 				3656BB03177BC18A0058A3D8 /* Security.framework in Frameworks */,
@@ -124,7 +122,6 @@
 				3656BAF3177BC1460058A3D8 /* Accounts.framework in Frameworks */,
 				3656BAF1177BC13F0058A3D8 /* Social.framework in Frameworks */,
 				3656BAEF177BC1370058A3D8 /* AdSupport.framework in Frameworks */,
-				36A1501217791BAB002CDFC5 /* UIKit.framework in Frameworks */,
 				36A1501417791BAB002CDFC5 /* Foundation.framework in Frameworks */,
 				36A1501617791BAB002CDFC5 /* CoreGraphics.framework in Frameworks */,
 				36A1501817791BAB002CDFC5 /* CoreData.framework in Frameworks */,
@@ -198,6 +195,9 @@
 				36A1502317791BAB002CDFC5 /* EPFAppDelegate.m */,
 				36A1502B17791BAB002CDFC5 /* MainStoryboard_iPhone.storyboard */,
 				36A1502E17791BAB002CDFC5 /* MainStoryboard_iPad.storyboard */,
+				36602207177E65F0008E3DEC /* PopoverViewController.h */,
+				36602208177E65F0008E3DEC /* PopoverViewController.m */,
+				361DD11D177E5A1E00D6B254 /* PopoverViewController.xib */,
 				36A1503417791BAB002CDFC5 /* EPFMasterViewController.h */,
 				36A1503517791BAB002CDFC5 /* EPFMasterViewController.m */,
 				36A1503717791BAB002CDFC5 /* EPFDetailViewController.h */,
@@ -211,7 +211,6 @@
 		36A1501A17791BAB002CDFC5 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				36F2F0AE177BD46A005389E1 /* TestFlightSDK1.2.6 */,
 				36A1501B17791BAB002CDFC5 /* EPF-Info.plist */,
 				36A1501C17791BAB002CDFC5 /* InfoPlist.strings */,
 				36A1501F17791BAB002CDFC5 /* main.m */,
@@ -240,18 +239,6 @@
 				36A1504A17791BAB002CDFC5 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		36F2F0AE177BD46A005389E1 /* TestFlightSDK1.2.6 */ = {
-			isa = PBXGroup;
-			children = (
-				36F2F0AF177BD46A005389E1 /* libTestFlight.a */,
-				36F2F0B0177BD46A005389E1 /* README.md */,
-				36F2F0B1177BD46A005389E1 /* release_notes.md */,
-				36F2F0B2177BD46A005389E1 /* TestFlight.h */,
-			);
-			name = TestFlightSDK1.2.6;
-			path = ../TestFlightSDK1.2.6;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -302,6 +289,11 @@
 				CLASSPREFIX = EPF;
 				LastUpgradeCheck = 0460;
 				ORGANIZATIONNAME = "'Iolani School";
+				TargetAttributes = {
+					36A1500D17791BAB002CDFC5 = {
+						DevelopmentTeam = JP7JGNH77T;
+					};
+				};
 			};
 			buildConfigurationList = 36A1500917791BAB002CDFC5 /* Build configuration list for PBXProject "EPF" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -326,11 +318,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				36F2F0B5177BD46A005389E1 /* release_notes.md in Resources */,
 				36A1501E17791BAB002CDFC5 /* InfoPlist.strings in Resources */,
 				36A1502617791BAB002CDFC5 /* Default.png in Resources */,
 				36A1502817791BAB002CDFC5 /* Default@2x.png in Resources */,
-				36F2F0B4177BD46A005389E1 /* README.md in Resources */,
 				36A1502A17791BAB002CDFC5 /* Default-568h@2x.png in Resources */,
 				36A1502D17791BAB002CDFC5 /* MainStoryboard_iPhone.storyboard in Resources */,
 				36A1503017791BAB002CDFC5 /* MainStoryboard_iPad.storyboard in Resources */,
@@ -368,11 +358,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				36602206177E62CA008E3DEC /* PopoverViewController.xib in Sources */,
 				36A1502017791BAB002CDFC5 /* main.m in Sources */,
 				36A1502417791BAB002CDFC5 /* EPFAppDelegate.m in Sources */,
 				36A1503317791BAB002CDFC5 /* EPF.xcdatamodeld in Sources */,
 				36A1503617791BAB002CDFC5 /* EPFMasterViewController.m in Sources */,
 				36A1503917791BAB002CDFC5 /* EPFDetailViewController.m in Sources */,
+				36602209177E65F0008E3DEC /* PopoverViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -491,7 +483,7 @@
 		36A1505317791BAB002CDFC5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer: Blake T (CEXCT5FD45)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)",
@@ -508,6 +500,7 @@
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "2799510E-E5CA-44DA-923D-4E05F6D235D7";
+				TARGETED_DEVICE_FAMILY = 2;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -515,7 +508,7 @@
 		36A1505417791BAB002CDFC5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer: Blake T (CEXCT5FD45)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)",
@@ -532,6 +525,7 @@
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "2799510E-E5CA-44DA-923D-4E05F6D235D7";
+				TARGETED_DEVICE_FAMILY = 2;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

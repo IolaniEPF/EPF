@@ -9,7 +9,6 @@
 #import <UIKit/UIKit.h>
 #import <Parse/Parse.h>
 #import "PopoverViewController.h"
-
 @class EPFDetailViewController;
 
 #import <CoreData/CoreData.h>
@@ -20,5 +19,6 @@
 
 @property (strong, nonatomic) NSFetchedResultsController *fetchedResultsController;
 @property (strong, nonatomic) NSManagedObjectContext *managedObjectContext;
+- (IBAction)authButtonClicked:(id)sender;
 
 @end

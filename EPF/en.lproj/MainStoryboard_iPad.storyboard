@@ -113,12 +113,15 @@
                     </tableView>
                     <extendedEdge key="edgesForExtendedLayout"/>
                     <navigationItem key="navigationItem" id="40">
-                        <barButtonItem key="leftBarButtonItem" title="Sign In" id="rZm-O8-xf4">
+                        <barButtonItem key="rightBarButtonItem" title="Sign In" id="rZm-O8-xf4">
                             <connections>
                                 <action selector="authButtonClicked:" destination="19" id="wRg-kf-4c5"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="authButton" destination="rZm-O8-xf4" id="d6J-NN-1Oe"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="23" sceneMemberID="firstResponder"/>
             </objects>
@@ -151,6 +154,10 @@
         </class>
         <class className="EPFMasterViewController" superclassName="UITableViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/EPFMasterViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="authButtonClicked:"/>
+                <relationship kind="outlet" name="authButton" candidateClass="UIBarButtonItem"/>
+            </relationships>
         </class>
         <class className="NSLayoutConstraint" superclassName="NSObject">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>

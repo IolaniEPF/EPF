@@ -10,13 +10,18 @@
 #import <Parse/Parse.h>
 #import "EPFDetailViewController.h"
 
-@interface EPFMasterViewController ()
+@interface EPFMasterViewController (){
+PopoverViewController *controller;
+UIPopoverController *popoverController;
+}
 - (void)configureCell:(UITableViewCell *)cell atIndexPath:(NSIndexPath *)indexPath;
 @property BOOL isAuthorized;
+@property (weak, nonatomic) IBOutlet UIBarButtonItem *authButton;
 
 @end
 
 @implementation EPFMasterViewController
+@synthesize authButton = _authButton;
 
 - (void)awakeFromNib
 {
@@ -31,11 +36,15 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
-    self.navigationItem.leftBarButtonItem = self.editButtonItem;
+    //self.navigationItem.leftBarButtonItem = self.editButtonItem;
 
     UIBarButtonItem *addButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(insertNewObject:)];
-    self.navigationItem.rightBarButtonItem = addButton;
+    self.navigationItem.leftBarButtonItem = addButton;
     self.detailViewController = (EPFDetailViewController *)[[self.splitViewController.viewControllers lastObject] topViewController];
+    
+    //Create Popup View
+    controller = [[PopoverViewController alloc] initWithNibName:@"PopoverViewController" bundle:nil];
+    popoverController = [[UIPopoverController alloc] initWithContentViewController:controller];
 }
 
 - (void)didReceiveMemoryWarning
@@ -64,12 +73,30 @@
     }
 }
 
+- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
+{
+    return YES;
+}
+
 #pragma mark - Table View
-/*
+
 - (IBAction)authButtonClicked:(id)sender { //Signin to Google
+    //Create Popup View
+    if ([popoverController isPopoverVisible]) {
+        [popoverController dismissPopoverAnimated:YES];
+    } else {
+        //the rectangle here is the frame of the object that presents the popover,
+        //in this case, the UIButton…
+        CGRect popRect = [[sender view] frame];
+        popRect = CGRectOffset(popRect, 0 , -40);
+        [popoverController presentPopoverFromRect:popRect
+                                           inView:self.view
+                         permittedArrowDirections:UIPopoverArrowDirectionAny
+                                         animated:YES];
+    }
     
 }
-*/
+
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
