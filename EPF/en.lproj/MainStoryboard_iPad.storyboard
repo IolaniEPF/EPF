@@ -156,7 +156,10 @@
             <source key="sourceIdentifier" type="project" relativePath="./Classes/EPFMasterViewController.h"/>
             <relationships>
                 <relationship kind="action" name="authButtonClicked:"/>
+<<<<<<< HEAD
                 <relationship kind="outlet" name="authButton" candidateClass="UIBarButtonItem"/>
+=======
+>>>>>>> 345762ba19f3b5e005d555a952d313ef777c196a
             </relationships>
         </class>
         <class className="NSLayoutConstraint" superclassName="NSObject">

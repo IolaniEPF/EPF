@@ -9,6 +9,7 @@
 #import "EPFMasterViewController.h"
 #import <Parse/Parse.h>
 #import "EPFDetailViewController.h"
+#import "GTMOAuth2ViewControllerTouch.h"
 
 @interface EPFMasterViewController (){
 PopoverViewController *controller;
